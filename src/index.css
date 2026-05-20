@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+body {
+  background-color: #f9fafb; /* Light gray from screenshot */
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom utilities if needed */
+.btn-primary {
+  @apply bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium py-2 px-4 rounded hover:from-purple-700 hover:to-purple-800 transition-colors duration-200 flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply bg-gray-dark text-white font-medium py-2 px-4 rounded hover:bg-black transition-colors duration-200 flex items-center justify-center gap-2;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-text-muted mb-1;
+}
